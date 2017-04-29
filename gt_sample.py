@@ -5,10 +5,11 @@
 import georasters as gr
 
 # Load data
-raster = './data/nasa-worldview-2016-07-09.tif'
+raster = './data/nasa-worldview-2016-07-09.tiff'
 data = gr.from_file(raster)
 
 # Plot data
+print(data)
 data.plot()
 
 # Get some stats
