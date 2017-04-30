@@ -107,7 +107,7 @@ body {
   list-style-type: decimal; }
 
 .reveal ul li {
-  list-style:none;
+  list-style:disc;
   font-size:70%;
   color:#444;
   line-height: 1.5em;
