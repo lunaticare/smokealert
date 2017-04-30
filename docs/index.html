@@ -6,8 +6,8 @@
 
 		<title>SmogAlert</title>
 
-		<meta name="description" content="Prediction of Smoke Propagation: Global Awareness">
-		<meta name="author" content="">
+		<meta name="description" content="Prediction of Smoke Propagation: Bringing Global Awareness">
+		<meta name="author" content="SmokeFighters">
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -46,19 +46,87 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section data-background-image="img/map-bg.jpg">
-					<h1 class="slides_title">Prediction of Smoke Propagation</h1>
+					<h2>Predictidon of Smoke Propagation: Bringing Global Awareness</h2>
 					<br>
 					<p>
-						<small><a href="https://github.com/NetBUG/smokealert">SmokeAlert team</a></small>
+						<small><a href="https://2017.spaceappschallenge.org/challenges/warning-danger-ahead/and-you-can-help-fight-fires/teams/smogfighters/project">SmokeFighters team</a></small>
 					</p>
 				</section>
-			</div>
 
+				<section>
+					<h2>Problem statement</h2>
+					<ul>
+						<li>
+							Smoke from landscape fires is one of the most dangerous consequences of fires, 
+							leading to pulmonary and heart disease in populated areas;
+						</li>
+						<li>
+							Forest fires smoke contains 20% of all worldwide pollutants* (inc. PM2.5)
+						</li>
+						<li>						
+							Smoke from wildfires kills approximately 340,000 people each year (e.g. only ~265 000 direct deaths from all types of fires)*
+						</li>
+					</ul>
+					<p class="fragment" style="color: red">
+						Awareness of people and emergency services could diminish consequences of smokes
+					</p>
+				</section>
+
+				<section data-background-image="img/siberia2016.gif">
+				</section>
+
+				<section>
+					<h2>Our approach</h2>
+					<table>
+						<tbody>
+							<tr>
+								<td>
+									Data aggregation
+								</td>
+								<td style="font-size: 60%">
+									Remote sensing data (satellites and aerial imagery),
+									socio economic data
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Data processing
+								</td>
+								<td style="font-size: 60%">
+									hotspots from fires detection
+									<p/>hotspots clusters -> area -> sum. fire radiative power
+									<p/><b>smoke detection</b>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Prediction models
+								</td>
+								<td style="font-size: 60%">
+									weather model → wind forecast
+									<p/>propagation forecast: 24hours (3h step)
+									<p/>population density maps
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Consumer services
+								</td>
+								<td style="font-size: 60%">
+									<ul>
+										<li>alert and notification services</li>
+										<li>API</li>
+										<li>Fires-map.com</li>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+			</div>
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
-
 
 		<script>
 
@@ -68,6 +136,8 @@
 				progress: true,
 				history: true,
 				center: true,
+
+				slideNumber: 'c/t',
 
 				transition: 'slide', // none/fade/slide/convex/concave/zoom
 
