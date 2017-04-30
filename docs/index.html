@@ -7,7 +7,7 @@
 		<title>SmogAlert</title>
 
 		<meta name="description" content="Prediction of Smoke Propagation: Bringing Global Awareness">
-		<meta name="author" content="SmokeFighters">
+		<meta name="author" content="SmokeAlert">
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -46,10 +46,10 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section data-background-image="img/map-bg.jpg">
-					<h2>Predictidon of Smoke Propagation: Bringing Global Awareness</h2>
+					<h2>Prediction of Smoke Propagation: Bringing Global Awareness</h2>
 					<br>
 					<p>
-						<small><a href="https://2017.spaceappschallenge.org/challenges/warning-danger-ahead/and-you-can-help-fight-fires/teams/smogfighters/project">SmokeFighters team</a></small>
+						<small><a href="https://2017.spaceappschallenge.org/challenges/warning-danger-ahead/and-you-can-help-fight-fires/teams/smogfighters/project">SmokeAlert team</a></small>
 					</p>
 				</section>
 
@@ -67,16 +67,31 @@
 							Smoke from wildfires kills approximately 340,000 people each year (e.g. only ~265 000 direct deaths from all types of fires)*
 						</li>
 					</ul>
-					<!--<p class="fragment" style="color: red">
-						Awareness of people and emergency services could diminish consequences of smokes
-					</p>-->
-				</section>
-				
-				<section>
 					<p class="fragment" style="color: red">
 						Awareness of people and emergency services could diminish consequences of smokes
 					</p>
 					<img src="img/india_smoke_pic.png" />
+				</section>
+
+				<section>
+					<h2>Our goals</h2>
+					<ul>
+						<li class="fragment">
+						Alerting immediate consumers: to help risk groups like children and old people, people suffering from pulmonary and cardiovascular diseases by sending preventive notification
+						</li>
+						<li class="fragment">
+						Influence via governmental structures: send data to emergency services to react faster and reduce costs of eliminating consequences
+						</li>
+						<li class="fragment">
+						Influence via media: to provide a new source of useful data for weather media to increase awareness in risk groups
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Solution</h2>
+					<div>
+					We want to create a service to predict air pollution from landscape fires in high populated areas. Based on the forecast we will provide information for mass media and notify people before the region will be affected.
 				</section>
 
 				<section data-background-image="img/siberia2016.gif">
@@ -182,12 +197,63 @@
 						</ul>	
 					</section>
 				</section>
+
 				<section data-background-image="img/map-bg.jpg">
 					<h2>Test map for Siberia</h2>
 					<br>
 					<p>
 						<iframe src="https://winnie.kosmosnimki.ru/viewer.html?config=I98IP" width="100%" height="550"></iframe>
 					</p>
+				</section>
+
+				<section>
+					<h2>Data sources we aim to use</h2>
+					<ul>
+						<li>
+						<b>Satellite Data</b> (Terra, Aqua and NPP satellites):<br/>
+						<i>Wildfires data</i> (Visible and IR images) - current and historical data<br/>
+						<i>Smoke and aerosols</i> - current and historical data from MODIS instrument (3.67)<br/>
+						<i>Weather Model</i> - Global open models (GFS. CMC..) for wind forecast<br/>
+						</li>
+						<li>
+						<b>Social & economic data</b> (e.g. population density map)
+						</li>
+						<li>
+						<b>Data Verification & Validation</b> (News from media and social media and Air pollution data from ground stations)
+						</li>
+						</ul>
+				</section>
+
+				<section>
+					<h2>Consumer services demo</h2>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/41nGxF6yoe8" frameborder="0" allowfullscreen></iframe>					</section>
+
+				<section>
+					<h2>Conclusion</h2>
+					<div>
+					During the hackathon we have:
+						<ul>
+							<li>Identified and verified the need for the service described
+							<li>Discovered data sources for the model and implemented data fetcher
+							<li>Built the heuristic to identify smoke 
+							<li>Developed requirements for a spaciotemporal prediction model
+							<div style="font-size: 70%">Including density based clustering for datapoints, autoregression and convolutions for matrix data processing</div>
+							<li>Developed mockup for a mobile layout of the client
+							<li>Prepared visual demo
+						</ul>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Our team</h2>
+					<ul>
+						<li>Georgy Potapov, creator of fires-map.com, Geoalert
+						<li>Dmitry Pogodin, backend-developer
+						<li>Maria Kolos, UX / UI developer
+						<li>Oleg Urzhumtsev, Skoltech, Cisco, data scientist
+						<li>Rodion Mamin, product manager, Space enthusiast
+						<li>Rustam Akhtyamov, Skoltech Space Center, PhD-student
+					</ul>
 				</section>
 			</div>
 		</div>
